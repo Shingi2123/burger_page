@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="main.css">
     <title>Burger</title>
 </head>  
@@ -20,28 +19,34 @@
                         </div>
                         <aside class="sidebar">
                             <ul class="sidebar__list">
-                                <span></span>
-                                <li class="sidebar__item">о нас</li>
-                                <li class="sidebar__item">бургеры</li>
-                                <li class="sidebar__item">команда</li>                                   
-                                <li class="sidebar__item">меню</li>
-                                <li class="sidebar__item">отзывы</li>
-                                <li class="sidebar__item">как мы работаем</li>
-                                <li class="sidebar__item">контакты</li>
+                                <li class="sidebar__item"><a href="#" class="about-link">о нас</a></li>
+                                <li class="sidebar__item"><a href="#" class="burger-link">бургеры</a></li>
+                                <li class="sidebar__item"><a href="#" class="team-link">команда</a></li>                                   
+                                <li class="sidebar__item"><a href="#" class="menu-link">меню</a></li>
+                                <li class="sidebar__item"><a href="#" class="reviews-link">отзывы</a></li>
+                                <li class="sidebar__item"><a href="#" class="job-link">как мы работаем</a></li>
+                                <li class="sidebar__item"><a href="#" class="contacts-link">контакты</a></li>
                             </ul>
                             </aside>
-                        <button class="header__banner__button">Заказать</button>
+                            <a href="link-order"><button class="link-order__button">Заказать</button></a>
                     </header>
                             
                     <div class="preview-burger">
-                        <img src="img/burger-banner.png" alt="Burger" class="preview-burger__picture-burger">
+                        <div class="preview-burger_block-image">
+                            <img src="img/burger-banner.png" alt="Burger" class="preview-burger__picture-burger">   
+                            <img src="img/drops-burger.png" alt="drops-burger" class="preview-burger__drops-burger">   
+                        </div>
                         <div class="slogan">
-                            <h1 class="slogan__title">мы делаем</h1>
-                            <p class="slogan__text">натуральные бургеры</p>
+                            <p class="slogan__text">
+                                <span class="slogan__title">мы делаем</span><br>натуральные бургеры
+                            </p>
                         </div>
                     </div> 
+                    <div class="scroll-down">стрелка вниз</div>
                 </div>
             </section>
+
+            <section></section>
         </div>
     </div>
 </div>
