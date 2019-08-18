@@ -1,0 +1,9 @@
+.section{
+    height: 100vh;
+    min-height: 650px;
+    
+    &--non-centered{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
