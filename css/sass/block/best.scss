@@ -1,10 +1,10 @@
 .best{
-    background-image: url('../../img/bg-best.png');
+    background-image: url('./img/bg-best.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.best__title{
+.best__desc h5{
     font-size: 24px;
     font-family: 'Lifehack';
     font-weight: 500;
@@ -28,7 +28,7 @@
 .best__picture{
     margin-bottom: 34px;
 }
-.best__desc-text{
+.best__desc p{
     font-family: 'Ubuntu';
     font-size: 14px;
     font-weight: 300;
