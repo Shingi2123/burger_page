@@ -455,10 +455,10 @@ button {
   -ms-flex: .8;
   flex: .8; }
 
-.face__content__desc {
+.desc-block {
   padding-top: 55px; }
 
-.face__content__picture {
+.picture-block {
   margin-right: 45px; }
 
 .face__subtitle {
