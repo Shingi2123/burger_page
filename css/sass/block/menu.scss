@@ -1,0 +1,26 @@
+.menu{
+    height: 100vh;
+    background-image: url('./img/bg-menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.title-menu{
+    padding: 111px 102px;
+}
+.menu__accordeon{
+    position: absolute;
+    right:0;
+    background-color: blue;
+    height: 100%;
+}
+.accordeon__list{
+    width: 100%;
+    transform: rotate(-90deg);
+}
+.accordeon__item{
+    font-family: "Gagalin";
+    font-size: 40px;
+    padding: 25px 40px;
+}

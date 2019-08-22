@@ -1,5 +1,5 @@
 .comuniti{
-    min-height: 100vh;
+    height: 100%;
     background-image: url('./img/comuniti-bg.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -39,7 +39,10 @@
         font-family: 'Gagalin';
         font-weight: 400;
         color: #f9b43b;
-        margin-bottom: 35px; 
+        margin-bottom: 35px;
+        .comuniti__desc{
+            height: 100%;
+        } 
         &::before{
             content:"";
             width:0;
@@ -56,6 +59,8 @@
 .comuniti__desc{
     display: flex;
     padding-top: 20px;
+    height: 0;
+    overflow: hidden;
 }
 .comuniti__desc__ava{
     content:"";
@@ -74,4 +79,8 @@
 .comuniti__desc__info__subtitle{
     margin-bottom: 24px;
     margin-right: 15px;
+}
+.testsvg{
+    fill: #4BC0A5;
+    color: #A4DFD1;
 }

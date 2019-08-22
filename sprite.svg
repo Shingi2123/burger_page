@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" >
-    <defs id="test">
-    <polyline id="test1" points="0 0,9 0,4.5 7" stroke="#f9b43b" fill="#f9b43b" />
-    </defs>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="test">
+        <polyline
+        points="0 0,9 0,4.5 7" stroke="#f9b43b" fill="#f9b43b" />
+    </symbol>
 </svg>

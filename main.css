@@ -691,7 +691,7 @@ button {
     transform: translate(-50%, -50%); }
 
 .comuniti {
-  min-height: 100vh;
+  height: 100%;
   background-image: url("./img/comuniti-bg.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -724,6 +724,8 @@ button {
     font-weight: 400;
     color: #f9b43b;
     margin-bottom: 35px; }
+    .comuniti__item--active .comuniti__desc {
+      height: 100%; }
     .comuniti__item--active::before {
       content: "";
       width: 0;
@@ -739,7 +741,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px; }
+  padding-top: 20px;
+  height: 0;
+  overflow: hidden; }
 
 .comuniti__desc__ava {
   content: "";
@@ -758,3 +762,35 @@ button {
 .comuniti__desc__info__subtitle {
   margin-bottom: 24px;
   margin-right: 15px; }
+
+.testsvg {
+  fill: #4BC0A5;
+  color: #A4DFD1; }
+
+.menu {
+  height: 100vh;
+  background-image: url("./img/bg-menu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+
+.title-menu {
+  padding: 111px 102px; }
+
+.menu__accordeon {
+  position: absolute;
+  right: 0;
+  background-color: blue;
+  height: 100%; }
+
+.accordeon__list {
+  width: 100%;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.accordeon__item {
+  font-family: "Gagalin";
+  font-size: 40px;
+  padding: 25px 40px; }
