@@ -879,3 +879,7 @@ button {
   margin-right: 20px; }
   .social-icon__item:last-child {
     margin-right: 0; }
+
+.social-icon__item__vk-svg {
+  width: 20px;
+  height: 20px; }
