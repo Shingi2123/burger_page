@@ -764,8 +764,9 @@ button {
   margin-right: 15px; }
 
 .comuniti__item__triangle-svg {
-  fill: #4BC0A5;
-  color: #A4DFD1;
+  margin-right: 10px;
+  stroke: #f9b43b;
+  fill: #f9b43b;
   width: 9px;
   height: 7px; }
 
