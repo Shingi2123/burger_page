@@ -726,16 +726,6 @@ button {
     margin-bottom: 35px; }
     .comuniti__item--active .comuniti__desc {
       height: 100%; }
-    .comuniti__item--active::before {
-      content: "";
-      width: 0;
-      vertical-align: top;
-      height: 0;
-      font-size: 6px;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 6px solid #f9b43b;
-      margin-right: 9px; }
 
 .comuniti__desc {
   display: -webkit-box;
