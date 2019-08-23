@@ -763,9 +763,11 @@ button {
   margin-bottom: 24px;
   margin-right: 15px; }
 
-.testsvg {
+.triangle_svg {
   fill: #4BC0A5;
-  color: #A4DFD1; }
+  color: #A4DFD1;
+  width: 9px;
+  height: 7px; }
 
 .menu {
   height: 100vh;

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-    <symbol id="test">
+    <symbol id="triangle">
         <polyline
         points="0 0,9 0,4.5 7" stroke="#f9b43b" fill="#f9b43b" />
     </symbol>
