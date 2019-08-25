@@ -933,7 +933,10 @@ button {
   .social-icon__item:last-child {
     margin-right: 0; }
 
-.social-icon__item__vk-svg {
+.social-icon__link {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   fill: #2f3234; }
-  .social-icon__item__vk-svg:hover {
+  .social-icon__link:hover {
     fill: #fff; }

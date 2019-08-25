@@ -47,19 +47,18 @@
         margin-right: 0;
     }
 }
-.social-icon__item__vk-svg{
+.social-icon__link{
+    transition: 0.5s;
     fill:#2f3234;
     &:hover{
         fill:#fff;
     }
-    // width: 20px;
-    // height: 20px;
 }
-// .social-icon__item__vk{
-//     background-image: ;
+// .social-icon__link__vk-svg{
+
 // }
 // .social-icon__item__fb{
-//     background-image: ;
+    
 // }
 // .social-icon__item__inst{
 //     background-image: ;
