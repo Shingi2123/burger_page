@@ -891,6 +891,24 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
+.addres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 50%; }
+
+.social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 50%; }
+
 .social-icon__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -914,3 +932,8 @@ button {
   margin-right: 20px; }
   .social-icon__item:last-child {
     margin-right: 0; }
+
+.social-icon__item__vk-svg {
+  fill: #2f3234; }
+  .social-icon__item__vk-svg:hover {
+    fill: #fff; }

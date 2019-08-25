@@ -19,6 +19,16 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.addres{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.social-icon{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
 .social-icon__list{
     display:flex;
     align-items: center;
@@ -38,12 +48,12 @@
     }
 }
 .social-icon__item__vk-svg{
+    fill:#2f3234;
+    &:hover{
+        fill:#fff;
+    }
     // width: 20px;
     // height: 20px;
-    viewbox: 0 0 126 72;
-
-    viewBox="0 0 126 72" 
-    enable-background="new 0 0 126 72
 }
 // .social-icon__item__vk{
 //     background-image: ;
