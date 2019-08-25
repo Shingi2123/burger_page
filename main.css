@@ -929,6 +929,10 @@ button {
     content: "";
     width: 12px;
     height: 11px;
+    margin-right: 6px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     background-image: url("./img/icons/phone.svg"); }
 
 .social-icon__item {
