@@ -42,7 +42,10 @@
         margin-bottom: 35px;
         .comuniti__desc{
             height: 100%;
-        } 
+        }
+        .comuniti__item__triangle-svg{
+            transform: rotate(180deg);
+        }
     }
 }
 .comuniti__desc{

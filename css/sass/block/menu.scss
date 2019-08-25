@@ -1,46 +1,90 @@
 .menu{
+    position: relative;
     height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
     background-image: url('./img/bg-menu.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: relative;
 }
 .title-menu{
-    padding: 111px 102px;
-}
-.menu__accordeon{
-    height: 100%;
     position: absolute;
-    right:0;
+    top:18%;
+    left:8%;
 }
-.accordeon__list{
-    height: 100%;
+.menu-acco{
     display: flex;
-    flex-direction: row;
+}
+.menu-acco__item{
+    display: flex;
+    position: relative;
+    height: 100%;
+    &__meat{
+        .menu-acco__trigger{
+        background-image: url('./img/bg-menu-item_1.png');
+        background-repeat: no-repeat;
+        background-position: 78% 30%;
+        }
+    }
+    &__vegetarian{
+        .menu-acco__trigger{
+        background-image: url('./img/bg-menu-item_2.png');
+        background-repeat: no-repeat;
+        background-position: 90% 95%;
+        }
+    }
+    &__dietary{
+        .menu-acco__trigger{
+        background-image: url('./img/bg-menu-item_3.png');
+        background-repeat: no-repeat;
+        background-position: 100% 70%
+        }
+    }
+    &--active{
+        .menu-acco__trigger-text{
+            color:#f9b43b;
+        }
+    }
+}
+.menu-acco__trigger{
+    position: relative;
+    height: 100%;
+    width: 80px;
+    display: block;
     &::before{
-        content: "wek";
+        content: "";
         width:100%;
         height: 100%;
         background-color:rgba(20, 20, 20, 0.7);
-        opacity: 1;
         position: absolute;
-        z-index: 15;
     }
 }
-.accordeon__item{
-    display: flex;
-    align-items: flex-end;
-}
-.accordeon__item__title{
+.menu-acco__trigger-text{
     font-family: "Gagalin";
-    color: #fff;
     font-size: 35px;
-    writing-mode: vertical-lr;
-    line-height: 0;
-    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    padding: 25px 40px 20px 40px;
 }
-.accordeon__item__title{
-    transform: rotate(-180deg);
-    z-index: 20;
+.menu-acco__content{
+    height: 100%;
+    background-color:rgba(47,50,52,0.93);
+    width: 0;
+    overflow: hidden;
+}
+.menu-acco__text{
+    color:#fff;
+    font-weight: 300;
+    line-height: 1.8;
+    font-family: 'Ubuntu';
+    padding: 60px 35px;
+    display: none;
 }
