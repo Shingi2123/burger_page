@@ -38,6 +38,12 @@
     font-family: 'Ubuntu';
     font-weight: bold;
     color:#e45028;
+    &::before{
+        content: "";
+        width: 12px;
+        height: 11px;
+        background-image: url('../../../img/icons/phone.svg')
+    }
 }
 .social-icon__item{
     width: 20px;
@@ -48,7 +54,7 @@
     }
 }
 .social-icon__link{
-    transition: 0.5s;
+    transition: 0.3s;
     fill:#2f3234;
     &:hover{
         fill:#fff;

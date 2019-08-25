@@ -925,6 +925,11 @@ button {
   font-family: 'Ubuntu';
   font-weight: bold;
   color: #e45028; }
+  .information__number-phone::before {
+    content: "";
+    width: 12px;
+    height: 11px;
+    background-image: url("../../../img/icons/phone.svg"); }
 
 .social-icon__item {
   width: 20px;
@@ -934,9 +939,9 @@ button {
     margin-right: 0; }
 
 .social-icon__link {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   fill: #2f3234; }
   .social-icon__link:hover {
     fill: #fff; }
