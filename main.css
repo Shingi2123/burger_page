@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -854,13 +855,13 @@ button {
 
 .map {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./img/map.png");
   background-position: center center;
   background-size: cover; }
 
 .order {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./img/bg-order.png");
   background-position: center top;
   background-size: cover;
@@ -873,51 +874,149 @@ button {
 .form__elem {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 145px; }
 
 .form__col {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1; }
-  .form__col:last-child {
-    display: block; }
+  .form__col .form__block {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+.form__col-1 {
+  margin-right: 20px; }
+  .form__col-1 .form__block input {
+    text-align: center;
+    width: 100%; }
+
+.form__col-2 .form__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.form__row__radio input {
-  width: 0; }
-
 .form__block {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   margin-right: 20px;
-  margin-bottom: 19px; }
-
-.form__block input, .form__block textarea {
-  font-family: 'Ubuntu';
-  padding: 12px 21px;
-  border-radius: 5px;
-  border: solid 1.5px #d1cfcb;
-  background-color: #ffffff;
-  width: 100%; }
-  .form__block input:focus, .form__block textarea:focus {
+  margin-bottom: 19px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .form__block input, .form__block textarea {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: #2f3234;
+    background-color: #ffffff;
+    padding: 12px 21px;
     border-radius: 5px;
-    border: solid 1.5px #f9b43b;
-    border-bottom: 1.5px solid transparent; }
-
-.form__block textarea {
-  resize: none;
-  height: 133px; }
+    border: solid 2px #d1cfcb; }
+    .form__block input:focus, .form__block textarea:focus {
+      border-radius: 5px;
+      border: solid 2px #f9b43b;
+      border-bottom: 2px solid transparent; }
 
 .form__block__title {
   color: #fff;
   font-family: 'Ubuntu';
   font-weight: 300;
-  margin-bottom: 9px; }
+  margin-bottom: 7px; }
+
+.form__row__textarea textarea {
+  height: 134px;
+  resize: none; }
+
+.form__row__radio {
+  margin-bottom: 17px; }
+  .form__row__radio input[type="radio"] {
+    display: none; }
+
+.form__row__check input[type="checkbox"] {
+  display: none; }
+
+.form__block__radio-custom::before {
+  vertical-align: middle;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-right: 9px; }
+
+.form__block--radio:checked + .form__block__radio-custom::before {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  content: "•";
+  color: #e35028;
+  font-size: 29px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px; }
+
+.form__block__checkbox-custom::before {
+  vertical-align: middle;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  margin-right: 9px; }
+
+.form__block--checkbox:checked + .form__block__checkbox-custom::before {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  content: "✔";
+  color: #e35028;
+  font-size: 14px;
+  font-weight: 900;
+  width: 15px;
+  height: 15px; }
+
+.form__row__radio .form__block, .form__row__check .form__block {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.form__row__radio input, .form__row__check input {
+  margin-right: 5px; }
+
+.form__row__radio .form__block__title, .form__row__check .form__block__title {
+  margin-bottom: 0; }
+
+.form__row__btn button {
+  padding: 12px 15px;
+  color: #fff;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  border-radius: 5px; }
+  .form__row__btn button:first-child {
+    margin-right: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #e45028; }
 
 .footer {
   position: absolute;

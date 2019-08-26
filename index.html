@@ -277,7 +277,7 @@
                     </div>
                     <form action="" class="form__elem">
 
-                        <div class="form__col"> 
+                        <div class="form__col form__col-1"> 
 
                             <div class="form__row">
                                 <label class="form__block">
@@ -317,8 +317,8 @@
                             </div>
                         </div>
 
-                            <div class="form__col">
-                                <div class="form__row">
+                            <div class="form__col form__col-2">
+                                <div class="form__row form__row__textarea">
                                     <label class="form__block">
                                         <div class="form__block__title">Комментарий</div>
                                         <textarea name="" id=""></textarea>
@@ -326,19 +326,26 @@
                                 </div>
                                 <div class="form__row form__row__radio">
                                     <label class="form__block">
-                                        <div class="form__block__title">Потребуется сдача</div>
-                                        <input type="radio">
+                                        <input type="radio" name="yes-no" class="form__block--radio">
+                                        <span class="form__block__radio-custom"></span>
+                                        <span class="form__block__title">Потребуется сдача</span>
                                     </label>
                                     <label class="form__block">
-                                        <div class="form__block__title">Оплата по карте</div>
-                                        <input type="radio">
+                                        <input type="radio" name="yes-no" class="form__block--radio">
+                                        <span class="form__block__radio-custom"></span>
+                                        <span class="form__block__title">Оплата по карте</span>
                                     </label>
                                 </div>
-                                <div class="form__row">
+                                <div class="form__row form__row__check">
                                     <label class="form__block">
-                                        <div class="form__block__title">Не перезванивать</div>
-                                        <input type="checkbox">
+                                        <input type="checkbox" class="form__block--checkbox">
+                                        <span class="form__block__checkbox-custom"></span>
+                                        <span class="form__block__title">Не перезванивать</span>
                                     </label> 
+                                </div>
+                                <div class="form__row form__row__btn">
+                                    <button type="button">Заказать</button>
+                                    <button type="button">Очистить</button>
                                 </div>
                             </div>
 
