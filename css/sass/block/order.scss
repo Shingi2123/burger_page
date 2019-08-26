@@ -1,0 +1,62 @@
+.order{
+    height: 100vh;
+    background-image: url('./img/bg-order.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.order{
+    .title{
+        padding-top: 138px;
+        margin-bottom: 44px;
+    }
+}
+.form__elem{
+    display: flex;
+}
+.form__col{
+    flex:1;
+    &:last-child{
+        display:block;
+    }
+}
+.form__row{
+    display: flex;
+}
+.form__row__radio{
+    input{
+        width: 0;
+    }
+}
+.form__block{
+    flex:1;
+    margin-right: 20px;
+    margin-bottom: 19px;
+}
+.form__block{
+    input, textarea{
+        font-family: 'Ubuntu';
+        padding: 12px 21px;
+        border-radius: 5px;
+        border: solid 1.5px #d1cfcb;
+        background-color: #ffffff;
+        width: 100%;
+        &:focus{
+            border-radius: 5px;
+            border: solid 1.5px #f9b43b;
+            border-bottom: 1.5px solid transparent;
+        }
+    }
+}
+.form__block{
+    textarea{
+        resize: none;
+        height: 133px;
+    }
+}
+.form__block__title{
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    margin-bottom: 9px;
+}

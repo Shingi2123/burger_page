@@ -859,6 +859,66 @@ button {
   background-position: center center;
   background-size: cover; }
 
+.order {
+  height: 100vh;
+  background-image: url("./img/bg-order.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.order .title {
+  padding-top: 138px;
+  margin-bottom: 44px; }
+
+.form__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form__col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  .form__col:last-child {
+    display: block; }
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form__row__radio input {
+  width: 0; }
+
+.form__block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 19px; }
+
+.form__block input, .form__block textarea {
+  font-family: 'Ubuntu';
+  padding: 12px 21px;
+  border-radius: 5px;
+  border: solid 1.5px #d1cfcb;
+  background-color: #ffffff;
+  width: 100%; }
+  .form__block input:focus, .form__block textarea:focus {
+    border-radius: 5px;
+    border: solid 1.5px #f9b43b;
+    border-bottom: 1.5px solid transparent; }
+
+.form__block textarea {
+  resize: none;
+  height: 133px; }
+
+.form__block__title {
+  color: #fff;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  margin-bottom: 9px; }
+
 .footer {
   position: absolute;
   left: 0;
@@ -927,7 +987,7 @@ button {
   color: #e45028; }
   .information__number-phone::before {
     content: "";
-    width: 12px;
+    width: 11px;
     height: 11px;
     margin-right: 6px;
     display: -webkit-inline-box;
