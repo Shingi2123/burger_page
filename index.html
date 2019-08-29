@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./main.css">
     <title>Burger</title>
@@ -26,16 +26,21 @@
                                 <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="header__links">
                         <button type="button" class="btn">Заказать</button>
+                        <a href="" class="hamburger-menu-link">
+                            <div class="hamburger-menu-link__bars"></div>
+                        </a>
                     </div>
                 </header>
                 <div class="face__content">
                     <div class="picture-block">
-                        <img src="./img/burger-banner.png" alt="Burger">
+                        <img src="./img/burger-banner.png" alt="Burger" class="picture-block_img">
                     </div>
                     <div class="desc-block">
                         <div class="title">Мы делаем</div>
-                        <div class="face__subtitle">натуральные бургеры</div>
+                        <p class="face__subtitle">натуральные бургеры</p>
                     </div>
                 </div>
             </div>
@@ -176,19 +181,24 @@
                        <svg class="comuniti__item__triangle-svg">
                             <use xlink:href="./sprite.svg#triangle"></use>
                         </svg>
-                        <span class="comuniti__item__name">Даниэл Редклиф</span>
+                        <a href="" class="comuniti__item__link">
+                            <span class="comuniti__item__name">Даниэл Редклиф</span>
+                        </a>
                     </li>
-                    <li class="comuniti__item--active">
+                    <li class="comuniti__item comuniti__item--active">
                        <svg class="comuniti__item__triangle-svg">
                             <use xlink:href="./sprite.svg#triangle"></use>
                         </svg>
-                        <span class="comuniti__item__name">
+                        <a href="#" class="comuniti__item__link">
+                            <span class="comuniti__item__name">
                             Ричард Джеймс
-                        </span>
+                            </span>
+                        </a>
                         
                         <div class="comuniti__desc">
-                            <div class="comuniti__desc__ava"></div>
-                            <!-- <img src="./img/comuniti-man-ava.png" alt="" class="accardeon_ava"> -->
+                            <div class="comuniti__desc__pic">
+                                <div class="comuniti__desc__img"></div>
+                            </div>
                             <div class="comuniti__desc__info">
                                 <div class="comuniti__desc__info__subtitle">Оператор</div>
                                 <div class="comuniti__desc__info__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
@@ -200,10 +210,13 @@
                        <svg class="comuniti__item__triangle-svg">
                             <use xlink:href="./sprite.svg#triangle"></use>
                         </svg>
-                        <span class="comuniti__item__name">Джейк Финн</span>
+                        <a href="#" class="comuniti__item__link">
+                            <span class="comuniti__item__name">Джейк Финн</span>
+                        </a>
                         <div class="comuniti__desc">
-                            <div class="comuniti__desc__ava"></div>
-                            <!-- <img src="./img/comuniti-man-ava.png" alt="" class="accardeon_ava"> -->
+                            <div class="comuniti__desc__pic">
+                                <div class="comuniti__desc__img"></div>
+                            </div>
                             <div class="comuniti__desc__info">
                                 <div class="comuniti__desc__info__subtitle">Оператор</div>
                                 <div class="comuniti__desc__info__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
@@ -215,10 +228,13 @@
                         <svg class="comuniti__item__triangle-svg">
                             <use xlink:href="./sprite.svg#triangle"></use>
                         </svg>
-                        <span class="comuniti__item__name">Николай Иванов</span>
+                        <a href="#" class="comuniti__item__link">
+                            <span class="comuniti__item__name">Николай Иванов</span>
+                        </a>
                             <div class="comuniti__desc">
-                                <div class="comuniti__desc__ava"></div>
-                                <!-- <img src="./img/comuniti-man-ava.png" alt="" class="accardeon_ava"> -->
+                                <div class="comuniti__desc__pic">
+                                    <div class="comuniti__desc__img"></div>
+                                </div>
                                 <div class="comuniti__desc__info">
                                     <div class="comuniti__desc__info__subtitle">Оператор</div>
                                     <div class="comuniti__desc__info__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
@@ -233,12 +249,12 @@
         <section class="section--non-centered menu">
             <div class="title title--white title-menu">меню</div>
                 <ul class="menu-acco">
-                    <li class="menu-acco__item menu-acco__item__meat menu-acco__item--active">
+                    <li class="menu-acco__item menu-acco__item__meat">
                         <a href="#" class="menu-acco__trigger">
                             <span class="menu-acco__trigger-text">Для мясоедов</span>
                         </a>
-                        <div class="menu-acco__content" style="width: 540px">
-                            <div class="menu-acco__text" style="display: block">
+                        <div class="menu-acco__content">
+                            <div class="menu-acco__text">
                                 Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
                             </div>
                         </div>
@@ -399,50 +415,8 @@
                 </div>
             </footer>
         </section>
-        <!-- <footer class="footer">
-            <div class="container">
-                <div class="addres">
-                    <div class="information">
-                        <div class="information__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                        <div class="information__number-phone">+7 (812) 377-13-77</div>
-                    </div>
-                </div>
-                <div class="social-icon">
-                    <ul class="social-icon__list">
-                        <li class="social-icon__item">
-                            <a href="#" class="social-icon__link">
-                                <svg class="social-icon__link__vk-svg" viewBox="0 0 126 72">
-                                    <use xlink:href="./sprite.svg#svg-vk"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-icon__item">
-                            <a href="#" class="social-icon__link">
-                                <svg class="social-icon__link__fb-svg" viewBox="0 0 36.711 36.711">
-                                    <use xlink:href="./sprite.svg#svg-fb"></use>
-                                </svg>
-                            </a> 
-                        </li>
-                        <li class="social-icon__item">
-                            <a href="#" class="social-icon__link">
-                                <svg class="social-icon__link__inst-svg" viewBox="0 0 36.663 36.664">
-                                    <use xlink:href="./sprite.svg#svg-inst"></use>
-                                </svg>
-                            </a>                           
-                        </li>                            
-                        <li class="social-icon__item">
-                            <a href="#" class="social-icon__link">
-                                <svg class="social-icon__link__twit-svg" viewBox="0 0 37.453 31.21">
-                                    <use xlink:href="./sprite.svg#svg-twit"></use>
-                                </svg>
-                            </a>    
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer> -->
         <ul class="fixed-menu">
-            <li class="fixed-menu__item--active"><button type="button" class="fixed-menu__dot"></button></li>
+            <li class="fixed-menu__item fixed-menu__item--active"><button type="button" class="fixed-menu__dot"></button></li>
             <li class="fixed-menu__item"><button type="button" class="fixed-menu__dot"></button></li>
             <li class="fixed-menu__item"><button type="button" class="fixed-menu__dot"></button></li>
             <li class="fixed-menu__item"><button type="button" class="fixed-menu__dot"></button></li>

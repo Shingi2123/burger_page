@@ -1,5 +1,5 @@
 .nav{
-    margin-right: 15px;
+    margin-right: 1.071rem;
 }
 .nav__list{
     display: flex;
@@ -8,15 +8,15 @@
 .nav__item{
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 1.071rem;
     &::after{
     content: "";
-    width: 4px;
-    height: 4px;
+    width: 0.2857rem;
+    height: 0.307em;
     border-radius: 50%;
     background-color: #fff;
     display: block;
-    margin-left: 15px;
+    margin-left: 1.071rem;
     }
     &:last-child{
         margin-right: 0;
@@ -28,6 +28,5 @@
 .nav__link{
     text-decoration: none;
     color:#fff;
-    font-size: 13px;
     text-transform: uppercase;
 }

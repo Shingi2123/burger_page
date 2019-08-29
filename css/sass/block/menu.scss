@@ -46,6 +46,12 @@
         .menu-acco__trigger-text{
             color:#f9b43b;
         }
+        .menu-acco__content{
+            width: 540px;
+        }
+        .menu-acco__text{
+            display: block;
+        }
     }
 }
 .menu-acco__trigger{
@@ -72,7 +78,7 @@
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0;
     white-space: nowrap;
-    padding: 25px 40px 20px 40px;
+    padding: 0.714em 1.142em 0.571em 1.142em;
 }
 .menu-acco__content{
     height: 100%;
@@ -81,10 +87,9 @@
     overflow: hidden;
 }
 .menu-acco__text{
-    color:#fff;
     font-weight: 300;
     line-height: 1.8;
     font-family: 'Ubuntu';
-    padding: 60px 35px;
+    padding: 4.285rem 2.5rem;
     display: none;
 }

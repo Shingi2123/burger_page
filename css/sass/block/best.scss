@@ -1,4 +1,5 @@
 .best{
+    padding-top: 9.642rem;
     background-image: url('./img/bg-best.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -9,24 +10,29 @@
     font-family: 'Lifehack';
     font-weight: 500;
     color: #2f3234;
-    margin-bottom: 33px;
+    margin-bottom: 1.375em;
 }
-.best .title{
-    margin-bottom: 55px;
+.best 
+    {
+    .title{
+        margin-bottom: 3.92rem;
+    }
 }
 .best__list{
     display: flex;
+    margin-bottom: 155px;
 }
 .best__item{
-    flex:1;
-    margin-right: 35px;
+    width: calc(100%/3);
+    // flex:1;
+    // margin-right: 2.5rem;
     text-align: center;
-    &:last-child{
-        margin-right: 0;
-    }
+    // &:last-child{
+    //     margin-right: 0;
+    // }
 }
 .best__picture{
-    margin-bottom: 34px;
+    margin-bottom: 2.428rem;
 }
 .best__desc p{
     font-family: 'Ubuntu';

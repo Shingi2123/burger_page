@@ -2,13 +2,83 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 12px;
+    padding-top: 0.857rem;
     font-family: "Ubuntu";
-    font-size: 13px;
+    font-size: 0.928rem;
     font-weight: 500;
-    width: 100%;
 }
 .header__buttons{
     display: flex;
     align-items: center;
+    @include tablets {
+        display: none;
+    }
+}
+.header__links{
+    display: flex;
+    flex-direction: row;
+}
+.header__links{
+    align-items: center;
+    .btn{
+        @include tablets {
+            margin-right: 1.875rem;
+        }
+        @include phones {
+            margin-right: 1.875rem;
+        }
+    }
+}
+.hamburger-menu-link{
+    position: relative;
+    vertical-align: middle;
+    height: 1.375rem;
+    align-items: center;
+    display: none;
+    @include tablets {
+        display: flex;
+    }
+}
+.hamburger-menu-link__bars{
+    &,
+    &:before,
+    &:after{
+        background-color: #fff;
+        width: 1.5rem;
+        height: 0.3125rem;
+        border-radius: 0.1875rem;
+    }
+    &:before{
+        position: absolute;
+        content: "";
+        display: block;
+        top:0;
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        display: block;
+        bottom:0;
+    }
+
+    // bottom: 0;
+    // content: "";
+    // display: block;
+    // background-color: #fff;
+    // width: 1.5rem;
+    // height: 0.3125rem;
+    // border-radius: 0.1875rem;
+    // &::after{
+
+    // }
+    // &::before{
+    //     top:0;
+    //     position: absolute;
+    //     content: "";
+    //     display: block;
+    //     background-color: #fff;
+    //     width: 1.5rem;
+    //     height: 0.3125rem;
+    //     border-radius: 0.1875rem;
+    // }
 }
