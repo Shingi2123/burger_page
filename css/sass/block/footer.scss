@@ -16,14 +16,30 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 .addres{
     width: 50%;
+    @include phones{
+        padding-top: 1.285rem;
+        width: 100%;
+    }
 }
 .social-icon{
     display: flex;
     justify-content: flex-end;
     width: 50%;
+    @include phones{
+        padding-bottom: 1.571rem;
+        width: 100%;
+        justify-content: center;
+    }
 }
 .social-icon__list{
     display:flex;

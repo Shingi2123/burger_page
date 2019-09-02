@@ -18,7 +18,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        // padding: 0;
+        padding: 0;
     }
     
     opacity: .93;
@@ -43,6 +43,9 @@
     font-weight: 400;
     margin-bottom: 2.5rem;
     &--active{
+        // .comuniti__item__link{
+        //     margin-bottom: 1.428rem;
+        // }
         .comuniti__item__name{
             color: #f9b43b;
         }
@@ -51,13 +54,16 @@
             transform: rotate(180deg);
         }
         .comuniti__desc{
+            padding: 1.085rem;
             height: 100%;
+            &__pic{
+                margin-bottom: 1.571rem;
+            }
         }
     }
 }
 .comuniti__desc{
     display: flex;
-    padding-top: 1.428rem;
     height: 0;
     overflow: hidden;
     @include tablets{
@@ -69,6 +75,9 @@
     text-align: center;
     // width: 30%;
     margin-right: 1.428rem; 
+    @include tablets{
+        margin-right: 0;
+    }
 }
 .comuniti__desc__img{
     background-image: url('./img/comuniti-man-ava.png');
@@ -85,6 +94,9 @@
 .comuniti__desc__info__subtitle{
     margin-bottom: 1.714rem;
     margin-right: 1.071rem;
+    @include tablets{
+        margin-right: 0;
+    }
 }
 .comuniti__item__triangle-svg{
     margin-right: 0.714rem;

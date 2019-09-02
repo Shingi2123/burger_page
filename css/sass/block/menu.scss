@@ -13,6 +13,10 @@
     position: absolute;
     top:18%;
     left:8%;
+    @include tablets{
+        top: 7%;
+        left: 3%;
+    }
 }
 .menu-acco{
     display: flex;
@@ -25,21 +29,33 @@
         .menu-acco__trigger{
         background-image: url('./img/bg-menu-item_1.png');
         background-repeat: no-repeat;
+        background-size: cover;
         background-position: 78% 30%;
+        @include tablets {
+            background-position: 50% 30%; 
+        }
         }
     }
     &__vegetarian{
         .menu-acco__trigger{
         background-image: url('./img/bg-menu-item_2.png');
         background-repeat: no-repeat;
+        background-size: cover;
         background-position: 90% 95%;
+        @include tablets {
+            background-position: 87% 30%; 
+        }
         }
     }
     &__dietary{
         .menu-acco__trigger{
         background-image: url('./img/bg-menu-item_3.png');
         background-repeat: no-repeat;
-        background-position: 100% 70%
+        background-size: cover;
+        background-position: 100% 70%;
+        @include tablets {
+            background-position: 60% 200%; 
+        }
         }
     }
     &--active{
@@ -47,7 +63,7 @@
             color:#f9b43b;
         }
         .menu-acco__content{
-            width: 540px;
+            width: 38.571rem;
         }
         .menu-acco__text{
             display: block;
@@ -57,7 +73,7 @@
 .menu-acco__trigger{
     position: relative;
     height: 100%;
-    width: 80px;
+    width: 5.714rem;
     display: block;
     &::before{
         content: "";
@@ -69,7 +85,7 @@
 }
 .menu-acco__trigger-text{
     font-family: "Gagalin";
-    font-size: 35px;
+    font-size: 2.5rem;
     color: #fff;
     text-align: center;
     position: absolute;
@@ -79,6 +95,9 @@
     transform-origin: 0 0;
     white-space: nowrap;
     padding: 0.714em 1.142em 0.571em 1.142em;
+    @include phones{
+        font-size: 1.8rem;
+    }
 }
 .menu-acco__content{
     height: 100%;

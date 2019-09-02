@@ -13,4 +13,7 @@
         &--centered{
         text-align: center;
     }
+    @include phones{
+        font-size: 4.5rem;
+    }
 }

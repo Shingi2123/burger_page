@@ -4,25 +4,50 @@
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 .order{
     .title{
-        padding-top: 1.916em;
         margin-bottom: 0.611em;
     }
 }
 .form__elem{
+    width: 100%;
     display: flex;
-    margin-bottom: 10.357rem;  
+    @include tablets{
+        flex-direction: column;
+        padding: 0 20%;
+    }
+    @include phones{
+        padding: 0;
+    }
 }
 .form__col{
-    flex:1;
+    width: 50%;
+    @include tablets{
+        width: 100%;
+    }
     .form__block{
-        flex:1;
+        width: 100%;
     }
 }
 .form__col-1{
-    margin-right: 1.428rem;
+        justify-content: space-between;
+        margin-right: 1.428rem;
+        @include tablets{
+            margin-right: 0;
+        }
+        @include phones{
+            .form__row:nth-child(3){
+                .form__block:nth-child(4){
+                    display: none;
+                }
+                .form__block:nth-child(3){
+                    margin-right: 0;
+                }
+            }
+        }
     .form__block{
         input{
             text-align: center;
@@ -34,13 +59,20 @@
     .form__block{
         display: flex;
     }
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .form__row__textarea{
+            width: 100%;
+        }
+    }
 }
 .form__row{
     display: flex;
 }
 
 .form__block{
-    margin-right: 1.428rem;
     margin-bottom: 1.357rem;
     flex-direction: column;
     input, textarea{
@@ -58,6 +90,25 @@
         }
     }
 }
+.form__col-1{
+    .form__row{
+        &:first-child{
+            .form__block{
+                &:first-child{
+                    margin-right: 1.428rem;
+                }
+            }
+        }
+        &:last-child{
+            .form__block{
+                margin-right: 1.428rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
 .form__block__title{
     font-family: 'Ubuntu';
     font-weight: 300;
@@ -70,10 +121,17 @@
     }
 }
 .form__row__radio{
+    display: inline-flex;
+    margin-bottom: 2.071rem;
+    .form__block{
+        margin-bottom: 0;
+    }
+    :first-child{
+        margin-right: 1.428rem;
+    }
     input[type="radio"]{
         display: none;
     }
-    margin-bottom: 1.214rem;
 }
 .form__row__check{
     input[type="checkbox"]{
@@ -95,7 +153,7 @@
     align-items: center; 
     content: "•";
     color: #e35028;
-    font-size: 29px;
+    font-size: 2.071rem;
     border-radius: 50%;
     width: 0.517em;
     height: 0.517em;
@@ -122,6 +180,7 @@
     .form__block{
         flex-direction: row;
         align-items: center;
+        width: auto;
     }
 }
 .form__row__radio, .form__row__check{

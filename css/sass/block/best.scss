@@ -6,11 +6,11 @@
     background-size: cover;
 }
 .best__desc h5{
-    font-size: 24px;
+    font-size: 1.714rem;
     font-family: 'Lifehack';
     font-weight: 500;
     color: #2f3234;
-    margin-bottom: 1.375em;
+    margin-bottom: 1.714rem;
 }
 .best 
     {
@@ -20,23 +20,42 @@
 }
 .best__list{
     display: flex;
-    margin-bottom: 155px;
+    margin-bottom: 11.071rem;
+    @include phones{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
 .best__item{
     width: calc(100%/3);
+    padding: 0 1.071rem;
     // flex:1;
     // margin-right: 2.5rem;
     text-align: center;
     // &:last-child{
     //     margin-right: 0;
     // }
+    @include phones{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        margin-bottom: 11.071rem;
+    }
 }
 .best__picture{
     margin-bottom: 2.428rem;
+    @include phones{
+        margin-bottom: 0;
+    }
 }
 .best__desc p{
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 300;
     color: rgba(47, 50, 52, 0.8);
+}
+.best__desc{
+    @include phones{
+        text-align: left;
+    }
 }
