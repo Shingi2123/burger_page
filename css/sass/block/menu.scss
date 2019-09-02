@@ -82,6 +82,9 @@
         background-color:rgba(20, 20, 20, 0.7);
         position: absolute;
     }
+    @include phones{
+        width: 4.714rem;
+    }
 }
 .menu-acco__trigger-text{
     font-family: "Gagalin";

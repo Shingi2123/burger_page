@@ -357,6 +357,9 @@ html, body {
     html, body {
       font-size: 12px; } }
 
+body {
+  position: relative; }
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -661,7 +664,8 @@ button {
   background-image: url("./img/bg-best.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 100%; }
 
 .best__desc h5 {
   font-size: 1.714rem;
@@ -703,10 +707,12 @@ button {
       margin-bottom: 11.071rem; } }
 
 .best__picture {
+  width: 90%;
   margin-bottom: 2.428rem; }
   @media screen and (max-width: 480px) {
     .best__picture {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      margin-right: 1.428rem; } }
 
 .best__desc p {
   font-family: 'Ubuntu';
@@ -1060,6 +1066,9 @@ button {
     height: 100%;
     background-color: rgba(20, 20, 20, 0.7);
     position: absolute; }
+  @media screen and (max-width: 480px) {
+    .menu-acco__trigger {
+      width: 4.714rem; } }
 
 .menu-acco__trigger-text {
   font-family: "Gagalin";
@@ -1112,7 +1121,8 @@ button {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  min-height: 100%; }
 
 .order .title {
   margin-bottom: 0.611em; }
@@ -1363,6 +1373,7 @@ button {
   @media screen and (max-width: 480px) {
     .addres {
       padding-top: 1.285rem;
+      padding-bottom: 1.357rem;
       width: 100%; } }
 
 .social-icon {
