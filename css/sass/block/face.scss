@@ -1,39 +1,63 @@
 .face{
+    position: relative;
     background-image: url('./img/background-image.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;  
-    position: relative;
+    background-size: cover;
     &::before{
         content: "";
+        position: absolute;
         width: 100%;
         height: 100%;
         background-image: url('./img/background-texture.png');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;  
-        position: absolute;
     }
 }
 .face__container{
     height: 100%;
-    flex-direction: column;
-    align-items: center;
 }
 .face__content{
     display: flex;
     align-items: center;
     flex: .8;
+    margin-bottom: 6.785rem;
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 23%;
+        margin-bottom: 0;
+    }
+    @include phones{
+        justify-content: center;
+        padding: 0 12%;
+        margin-bottom: 0;
+    }
 } 
+.picture-block,
 .desc-block{
-    padding-top: 55px;
+    @include tablets {
+        text-align: center;
+    }
 }
 .picture-block{
-    margin-right: 45px;
+    margin-right: 3.214rem;
+    @include tablets{
+        margin-right: 0;
+    }
+}
+.picture-block_img{
+    width: 100%;
+}
+.desc-block{
+    padding-top: 3.928rem;
 }
 .face__subtitle{
-    font-size: 65px;
-    color:#ffffff;
+    font-size: 4.642rem;
     font-family: 'Lifehack';
     font-weight: 500;
+    @include phones{
+    font-size: 3.857rem;
+    }
 } 

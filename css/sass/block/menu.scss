@@ -1,0 +1,117 @@
+.menu{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('./img/bg-menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.title-menu{
+    position: absolute;
+    top:18%;
+    left:8%;
+    @include tablets{
+        top: 7%;
+        left: 3%;
+    }
+}
+.menu-acco{
+    display: flex;
+}
+.menu-acco__item{
+    display: flex;
+    position: relative;
+    height: 100%;
+    &__meat{
+        .menu-acco__trigger{
+        background-image: url('./img/bg-menu-item_1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 78% 30%;
+        @include tablets {
+            background-position: 50% 30%; 
+        }
+        }
+    }
+    &__vegetarian{
+        .menu-acco__trigger{
+        background-image: url('./img/bg-menu-item_2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 90% 95%;
+        @include tablets {
+            background-position: 87% 30%; 
+        }
+        }
+    }
+    &__dietary{
+        .menu-acco__trigger{
+        background-image: url('./img/bg-menu-item_3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 70%;
+        @include tablets {
+            background-position: 60% 200%; 
+        }
+        }
+    }
+    &--active{
+        .menu-acco__trigger-text{
+            color:#f9b43b;
+        }
+        .menu-acco__content{
+            width: 38.571rem;
+        }
+        .menu-acco__text{
+            display: block;
+        }
+    }
+}
+.menu-acco__trigger{
+    position: relative;
+    height: 100%;
+    width: 5.714rem;
+    display: block;
+    &::before{
+        content: "";
+        width:100%;
+        height: 100%;
+        background-color:rgba(20, 20, 20, 0.7);
+        position: absolute;
+    }
+    @include phones{
+        width: 4.714rem;
+    }
+}
+.menu-acco__trigger-text{
+    font-family: "Gagalin";
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    padding: 0.714em 1.142em 0.571em 1.142em;
+    @include phones{
+        font-size: 1.8rem;
+    }
+}
+.menu-acco__content{
+    height: 100%;
+    background-color:rgba(47,50,52,0.93);
+    width: 0;
+    overflow: hidden;
+}
+.menu-acco__text{
+    font-weight: 300;
+    line-height: 1.8;
+    font-family: 'Ubuntu';
+    padding: 4.285rem 2.5rem;
+    display: none;
+}

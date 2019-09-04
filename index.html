@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./main.css">
     <title>Burger</title>
@@ -26,16 +26,21 @@
                                 <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="header__links">
                         <button type="button" class="btn">Заказать</button>
+                        <a href="" class="hamburger-menu-link">
+                            <div class="hamburger-menu-link__bars"></div>
+                        </a>
                     </div>
                 </header>
                 <div class="face__content">
                     <div class="picture-block">
-                        <img src="./img/burger-banner.png" alt="Burger">
+                        <img src="./img/burger-banner.png" alt="Burger" class="picture-block_img">
                     </div>
                     <div class="desc-block">
                         <div class="title">Мы делаем</div>
-                        <div class="face__subtitle">натуральные бургеры</div>
+                        <p class="face__subtitle">натуральные бургеры</p>
                     </div>
                 </div>
             </div>
@@ -48,7 +53,9 @@
                 <ul class="best__list">
                     <li class="best__item">
                         <div class="best__picture">
-                            <img src="./img/icons/meat.svg" alt="Meat">
+                            <svg class="meet-svg" viewBox="0 0 96.428 89.246" width="96.428px" height="89.246px">
+                                <use xlink:href="./sprite.svg#svg-meet"></use>
+                            </svg>
                         </div>
                         <div class="best__desc">
                             <h5>
@@ -59,7 +66,9 @@
                     </li>
                     <li class="best__item">
                         <div class="best__picture">
-                            <img src="./img/icons/hand.svg" alt="hand">
+                            <svg class="best__pictire__hand-svg" viewBox="0 0 73 85.875" width="73px" height="85.875px">
+                                <use xlink:href="./sprite.svg#svg-hand"></use>
+                            </svg>
                         </div>
                         <div class="best__desc">
                             <h5>
@@ -70,7 +79,9 @@
                     </li>
                     <li class="best__item">
                         <div class="best__picture">
-                            <img src="./img/icons/natural.svg" alt="leaf">
+                            <svg class="natural-svg" viewBox="0 0 88 75.534" width="88px" height="75.534px">
+                                <use xlink:href="./sprite.svg#svg-natural"></use>
+                            </svg>
                         </div>
                         <div class="best__desc">
                             <h5>
@@ -86,91 +97,364 @@
         </section>
         <section class="section reviews">
             <ul class="reviews__list">
-                <li class="reviews__item" style="background-image: url('./img/reviews_pic/reviews_1.png'); background-position-y: 25%; ">
-                    <!-- <img src="./img/reviews_pic/reviews_1.png" alt="" class="reviews__pic"> -->
-                    <div class="reviews__hover">
-                        <div class="reviews__title">Константин Спилберг</div>
-                        <div class="reviews__text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                        </div>
-                        <button type="button" class="btn">Подробнее</button>
-                    </div>
-                </li>
-                <li class="reviews__item" style="background-image: url('./img/reviews_pic/reviews_2.png'); background-position: 60% 26%; background-size: 240%">
-                    <!-- <img src="./img/reviews_pic/reviews_2.png" alt="" class="reviews__pic"> -->
-                    <div class="reviews__hover">
-                        <div class="reviews__title">Константин Спилберг</div>
-                        <div class="reviews__text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                        </div>
-                        <button type="button" class="btn">Подробнее</button>
-                    </div>
-                </li>
-                <li class="reviews__item" style="background-image: url('./img/reviews_pic/reviews_3.png'); background-position: center top; background-size: 270%;">
-                    <!-- <img src="./img/reviews_pic/reviews_3.png" alt="" class="reviews__pic"> -->
-                    <div class="reviews__hover">
-                        <div class="reviews__title">Константин Спилберг</div>
-                        <div class="reviews__text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                        </div>
-                        <button type="button" class="btn">Подробнее</button>
-                    </div>
-                </li>
-                <li class="reviews__item" style="background-image: url('./img/reviews_pic/reviews_4.png'); background-position: 100% 33%; background-size: 260%">
-                    <!-- <img src="./img/reviews_pic/reviews_4.png" alt="" class="reviews__pic"> -->
-                    <div class="reviews__hover">
-                        <div class="reviews__title">Константин Спилберг</div>
-                        <div class="reviews__text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                        </div>  
-                        <button type="button" class="btn">Подробнее</button>      
-                    </div>
-                </li>
-                <li class="reviews__item" style="background-image: url('./img/reviews_pic/reviews_5.png'); background-position: left top; background-size:200%;">
-                    <!-- <img src="./img/reviews_pic/reviews_5.png" alt="" class="reviews__pic"> -->
-                    <div class="reviews__hover">
-                        <div class="reviews__title">Константин Спилберг</div>
-                        <div class="reviews__text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                        </div>
-                        <button type="button" class="btn">Подробнее</button>
-                    </div>
-                </li>
-                <li class="reviews__item" style="background-image: url('./img/reviews_pic/reviews_6.png'); background-position: 65% 0%; background-size: 200%">
-                    <!-- <img src="./img/reviews_pic/reviews_6.png" alt="" class="reviews__pic"> -->
-                    <div class="reviews__hover">
-                        <div class="reviews__title">Константин Спилберг</div>
-                        <div class="reviews__text">
+                <li class="reviews__item">
+                    <div class="reviews__block">
+                        <div class="reviews__background" style="background-image: url('./img/reviews_pic/reviews_1.png'); background-position-y: 25%;"></div>
+                        <div class="reviews__hover">        
+                            <div class="reviews__title">Константин Спилберг</div>
+                            <div class="reviews__text">
                                 <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="review__button">
+                                <a href="#" class="btn review__button__link"></a>
+                            </div>
                         </div>
-                        <button type="button" class="btn">Подробнее</button>
+                    </div> 
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__block">
+                        <div class="reviews__background" style="background-image: url('./img/reviews_pic/reviews_2.png'); background-position: 60% 26%;"></div>
+                        <div class="reviews__hover">        
+                            <div class="reviews__title">Константин Спилберг</div>
+                            <div class="reviews__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="review__button">
+                                <a href="#" class="btn review__button__link"></a>
+                            </div>
+                        </div>
                     </div>
                 </li>
-                <li class="reviews__item" style="background-image: url('./img/reviews_pic/reviews_7.png');background-position: 40% 0%; background-size: 210%">
-                    <!-- <img src="./img/reviews_pic/reviews_7.png" alt="" class="reviews__pic"> -->
-                    <div class="reviews__hover">
-                        <div class="reviews__title">Константин Спилберг</div>
-                        <div class="reviews__text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                <li class="reviews__item">
+                    <div class="reviews__block">
+                        <div class="reviews__background" style="background-image: url('./img/reviews_pic/reviews_3.png'); background-position: center top;"></div>
+                        <div class="reviews__hover">
+                            <div class="reviews__title">Константин Спилберг</div>
+                            <div class="reviews__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="review__button">
+                                <a href="#" class="btn review__button__link"></a>
+                            </div>
                         </div>
-                        <button type="button" class="btn">Подробнее</button>
+                    </div>    
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__block">
+                        <div class="reviews__background" style="background-image: url('./img/reviews_pic/reviews_4.png'); background-position: 100% 33%;"></div>
+                        <div class="reviews__hover">
+                            <div class="reviews__title">Константин Спилберг</div>
+                            <div class="reviews__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>  
+                            <div class="review__button">
+                                <a href="#" class="btn review__button__link"></a>
+                            </div>   
+                        </div>
+                    </div>    
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__block">
+                        <div class="reviews__background" style="background-image: url('./img/reviews_pic/reviews_5.png'); background-position: left top;"></div>
+                         <div class="reviews__hover">
+                            <div class="reviews__title">Константин Спилберг</div>
+                            <div class="reviews__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="review__button">
+                                <a href="#" class="btn review__button__link"></a>
+                            </div> 
+                        </div>
+                    </div>    
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__block">
+                        <div class="reviews__background" style="background-image: url('./img/reviews_pic/reviews_6.png'); background-position: 65% 0%;"></div>
+                        <div class="reviews__hover">
+                            <div class="reviews__title">Константин Спилберг</div>
+                            <div class="reviews__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="review__button">
+                                <a class="btn review__button__link" href="#"></a>
+                            </div> 
+                        </div>
                     </div>
                 </li>
-                <li class="reviews__item" style="background-image: url('./img/reviews_pic/reviews_8.png'); background-position: right center; background-size: 170%;">
-                    <!-- <img src="./img/reviews_pic/reviews_8.png" alt="" class="reviews__pic"> -->
-                    <div class="reviews__hover">
-                        <div class="reviews__title">Константин Спилберг</div>
-                        <div class="reviews__text">
-                            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                <li class="reviews__item">
+                    <div class="reviews__block">
+                        <div class="reviews__background" style="background-image: url('./img/reviews_pic/reviews_7.png');background-position: 40% 0%;"></div>
+                        <div class="reviews__hover">
+                            <div class="reviews__title">Константин Спилберг</div>
+                            <div class="reviews__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="review__button">
+                                <a href="#" class="btn review__button__link"></a>
+                            </div>
                         </div>
-                        <button type="button" class="btn">Подробнее</button>
+                    </div>
+                </li>
+                <li class="reviews__item">
+                    <div class="reviews__block">
+                    <div class="reviews__background" style="background-image: url('./img/reviews_pic/reviews_8.png'); background-position: right center;"></div>
+                        <div class="reviews__hover">
+                            <div class="reviews__title">Константин Спилберг</div>
+                            <div class="reviews__text">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            </div>
+                            <div class="review__button">
+                                <a href="#" class="btn review__button__link"></a>
+                            </div> 
+                        </div>
                     </div>
                 </li>
             </ul>
         </section>
+        <section class="section comuniti">
+            <div class="comuniti__block">
+                <div class="title comuniti__block__title">команда</div>
+                <ul class="comuniti__list">
+                    <li class="comuniti__item">
+                       <svg class="comuniti__item__triangle-svg">
+                            <use xlink:href="./sprite.svg#triangle"></use>
+                        </svg>
+                        <a href="" class="comuniti__item__link">
+                            <span class="comuniti__item__name">Даниэл Редклиф</span>
+                        </a>
+                    </li>
+                    <li class="comuniti__item comuniti__item--active">
+                       <svg class="comuniti__item__triangle-svg">
+                            <use xlink:href="./sprite.svg#triangle"></use>
+                        </svg>
+                        <a href="#" class="comuniti__item__link">
+                            <span class="comuniti__item__name">
+                            Ричард Джеймс
+                            </span>
+                        </a>
+                        
+                        <div class="comuniti__desc">
+                            <div class="comuniti__desc__pic">
+                                <div class="comuniti__desc__img"></div>
+                            </div>
+                            <div class="comuniti__desc__info">
+                                <div class="comuniti__desc__info__subtitle">Оператор</div>
+                                <div class="comuniti__desc__info__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="comuniti__item">
+                       <svg class="comuniti__item__triangle-svg">
+                            <use xlink:href="./sprite.svg#triangle"></use>
+                        </svg>
+                        <a href="#" class="comuniti__item__link">
+                            <span class="comuniti__item__name">Джейк Финн</span>
+                        </a>
+                        <div class="comuniti__desc">
+                            <div class="comuniti__desc__pic">
+                                <div class="comuniti__desc__img"></div>
+                            </div>
+                            <div class="comuniti__desc__info">
+                                <div class="comuniti__desc__info__subtitle">Оператор</div>
+                                <div class="comuniti__desc__info__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="comuniti__item">
+                        <svg class="comuniti__item__triangle-svg">
+                            <use xlink:href="./sprite.svg#triangle"></use>
+                        </svg>
+                        <a href="#" class="comuniti__item__link">
+                            <span class="comuniti__item__name">Николай Иванов</span>
+                        </a>
+                            <div class="comuniti__desc">
+                                <div class="comuniti__desc__pic">
+                                    <div class="comuniti__desc__img"></div>
+                                </div>
+                                <div class="comuniti__desc__info">
+                                    <div class="comuniti__desc__info__subtitle">Оператор</div>
+                                    <div class="comuniti__desc__info__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+
+                
+            </div>
+        </section>
+        <section class="section--non-centered menu">
+            <div class="title title--white title-menu">меню</div>
+                <ul class="menu-acco">
+                    <li class="menu-acco__item menu-acco__item__meat">
+                        <a href="#" class="menu-acco__trigger">
+                            <span class="menu-acco__trigger-text">Для мясоедов</span>
+                        </a>
+                        <div class="menu-acco__content">
+                            <div class="menu-acco__text">
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="menu-acco__item menu-acco__item__vegetarian">
+                        <a href="#" class="menu-acco__trigger">
+                            <span class="menu-acco__trigger-text">Вегетарианское</span>
+                        </a>
+                        <div class="menu-acco__content">
+                            <div class="menu-acco__text">
+                               Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="menu-acco__item menu-acco__item__dietary">
+                        <a href="#" class="menu-acco__trigger">
+                            <spasn class="menu-acco__trigger-text">Диетическое</spasn>
+                        </a>
+                        <div class="menu-acco__content">
+                            <div class="menu-acco__text">
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. 
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+        </section>
+
+        <section class="order">
+            <div class="container">
+                <div class="form">
+                    <div class="title title--centered">
+                        Закажите доставку
+                    </div>
+                    <form action="" class="form__elem">
+
+                        <div class="form__col form__col-1"> 
+
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block__title">Имя</div>
+                                    <input type="text">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block__title">Телефон</div>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block__title">Улица</div>
+                                    <input type="text">
+                                </label>
+                            </div>
+
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block__title">Дом</div>
+                                    <input type="text">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block__title">Корпус</div>
+                                    <input type="text">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block__title">Квартира</div>
+                                    <input type="text">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block__title">Этаж</div>
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+
+                            <div class="form__col form__col-2">
+                                <div class="form__row form__row__textarea">
+                                    <label class="form__block">
+                                        <div class="form__block__title">Комментарий</div>
+                                        <textarea name="" id=""></textarea>
+                                    </label>
+                                </div>
+                                <div class="form__row form__row__radio">
+                                    <label class="form__block">
+                                        <input type="radio" name="yes-no" class="form__block--radio">
+                                        <span class="form__block__radio-custom"></span>
+                                        <span class="form__block__title">Потребуется сдача</span>
+                                    </label>
+                                    <label class="form__block">
+                                        <input type="radio" name="yes-no" class="form__block--radio">
+                                        <span class="form__block__radio-custom"></span>
+                                        <span class="form__block__title">Оплата по карте</span>
+                                    </label>
+                                </div>
+                                <div class="form__row form__row__check">
+                                    <label class="form__block">
+                                        <input type="checkbox" class="form__block--checkbox">
+                                        <span class="form__block__checkbox-custom"></span>
+                                        <span class="form__block__title">Не перезванивать</span>
+                                    </label> 
+                                </div>
+                                <div class="form__row form__row__btn">
+                                    <button type="button">Заказать</button>
+                                    <button type="button">Очистить</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <footer class="footer">
+                <div class="container">
+                    <div class="addres">
+                        <div class="information">
+                            <div class="information__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                            <div class="information__number-phone">+7 (812) 377-13-77</div>
+                        </div>
+                    </div>
+                    <div class="social-icon">
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item">
+                                <a href="#" class="social-icon__link">
+                                    <svg class="social-icon__link__vk-svg" viewBox="0 0 126 72">
+                                        <use xlink:href="./sprite.svg#svg-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-icon__item">
+                                <a href="#" class="social-icon__link">
+                                    <svg class="social-icon__link__fb-svg" viewBox="0 0 36.711 36.711">
+                                        <use xlink:href="./sprite.svg#svg-fb"></use>
+                                    </svg>
+                                </a> 
+                            </li>
+                            <li class="social-icon__item">
+                                <a href="#" class="social-icon__link">
+                                    <svg class="social-icon__link__inst-svg" viewBox="0 0 36.663 36.664">
+                                        <use xlink:href="./sprite.svg#svg-inst"></use>
+                                    </svg>
+                                </a>                           
+                            </li>                            
+                            <li class="social-icon__item">
+                                <a href="#" class="social-icon__link">
+                                    <svg class="social-icon__link__twit-svg" viewBox="0 0 37.453 31.21">
+                                        <use xlink:href="./sprite.svg#svg-twit"></use>
+                                    </svg>
+                                </a>    
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </section>
         <ul class="fixed-menu">
-            <li class="fixed-menu__item fixed-menu__item"></li>
-            <li class="fixed-menu__item--active"><button type="button" class="fixed-menu__dot"></button></li>
+            <li class="fixed-menu__item fixed-menu__item--active"><button type="button" class="fixed-menu__dot"></button></li>
             <li class="fixed-menu__item"><button type="button" class="fixed-menu__dot"></button></li>
             <li class="fixed-menu__item"><button type="button" class="fixed-menu__dot"></button></li>
             <li class="fixed-menu__item"><button type="button" class="fixed-menu__dot"></button></li>

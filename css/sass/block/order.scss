@@ -1,0 +1,210 @@
+.order{
+    min-height: 100vh;
+    background-image: url('./img/bg-order.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4.714rem 0 4.285rem;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+}
+.order{
+    .title{
+        margin-bottom: 0.611em;
+    }
+}
+.form__elem{
+    width: 100%;
+    display: flex;
+    @include tablets{
+        flex-direction: column;
+        padding: 0 20%;
+    }
+    @include phones{
+        padding: 0;
+    }
+}
+.form__col{
+    width: 50%;
+    @include tablets{
+        width: 100%;
+    }
+    .form__block{
+        width: 100%;
+    }
+}
+.form__col-1{
+        justify-content: space-between;
+        margin-right: 1.428rem;
+        @include tablets{
+            margin-right: 0;
+        }
+        @include phones{
+            .form__row:nth-child(3){
+                .form__block:nth-child(4){
+                    display: none;
+                }
+                .form__block:nth-child(3){
+                    margin-right: 0;
+                }
+            }
+        }
+    .form__block{
+        input{
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+.form__col-2{
+    .form__block{
+        display: flex;
+    }
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .form__row__textarea{
+            width: 100%;
+        }
+    }
+}
+.form__row{
+    display: flex;
+}
+
+.form__block{
+    margin-bottom: 1.357rem;
+    flex-direction: column;
+    input, textarea{
+        font-family: 'Ubuntu';
+        font-weight: 300;
+        color:#2f3234;;
+        background-color: #ffffff;
+        padding: 0.857rem 1.5rem;
+        border-radius: 0.357rem;
+        border: solid 0.142rem #d1cfcb;
+        &:focus{
+            border-radius: 0.357rem;
+            border: solid 0.142rem #f9b43b;
+            border-bottom: 0.142rem solid transparent;
+        }
+    }
+}
+.form__col-1{
+    .form__row{
+        &:first-child{
+            .form__block{
+                &:first-child{
+                    margin-right: 1.428rem;
+                }
+            }
+        }
+        &:last-child{
+            .form__block{
+                margin-right: 1.428rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.form__block__title{
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+.form__row__textarea{
+    textarea{
+        height: 9.571rem;
+        resize: none;
+    }
+}
+.form__row__radio{
+    display: inline-flex;
+    margin-bottom: 2.071rem;
+    .form__block{
+        margin-bottom: 0;
+    }
+    :first-child{
+        margin-right: 1.428rem;
+    }
+    input[type="radio"]{
+        display: none;
+    }
+}
+.form__row__check{
+    input[type="checkbox"]{
+        display: none;
+    }
+}
+.form__block__radio-custom::before{
+    vertical-align: middle;
+    display: inline-flex;
+    content: "";
+    width: 1.071rem;
+    height: 1.071rem;
+    background:#ffffff;
+    border-radius: 50%;
+    margin-right: 0.642rem;
+}
+.form__block--radio:checked + .form__block__radio-custom::before{
+    justify-content: center;
+    align-items: center; 
+    content: "•";
+    color: #e35028;
+    font-size: 2.071rem;
+    border-radius: 50%;
+    width: 0.517em;
+    height: 0.517em;
+}
+.form__block__checkbox-custom::before{
+    vertical-align: middle;
+    display: inline-flex;
+    content: "";
+    width: 1.071rem;
+    height: 1.071rem;
+    background:#ffffff;
+    margin-right: 0.642rem;
+}
+.form__block--checkbox:checked + .form__block__checkbox-custom::before{
+    justify-content: center;
+    align-items: center; 
+    content: "✔";
+    color: #e35028;
+    font-weight: 900;
+    width: 1.071rem;
+    height: 1.071rem;
+}
+.form__row__radio, .form__row__check{
+    .form__block{
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+    }
+}
+.form__row__radio, .form__row__check{
+    input{
+        margin-right: 1.071rem;
+    }
+    .form__block__title{
+        margin-bottom: 0;
+    }
+}
+.form__row__btn{
+    button{
+        padding: 0.857rem 1.071rem;
+        color: #fff;
+        font-family: 'Ubuntu';
+        font-weight: 300;
+        border-radius: 0.357rem;
+        &:first-child{
+            margin-right: 0.357rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: #e45028;
+        }
+    }
+}

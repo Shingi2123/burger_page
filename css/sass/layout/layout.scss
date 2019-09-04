@@ -5,23 +5,33 @@ html,body {
     font-size: 14px;
     height: 100%;
     background-color: white;
+    color: #fff;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    @include tablets {
+        font-size: 13px;
+    }
+    @include phones {
+        font-size: 12px;
+    }
+}
+body{
+    position: relative;
 }
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: 940px + 20px;
     min-height: 100%;
+    // min-width: 68.57rem;
     overflow: hidden;
 }
 .container{
-    width: 940px;
+    width: 95%;
+    max-width: 67.14rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     &--non--centred{
         justify-content: flex-start;
     }
