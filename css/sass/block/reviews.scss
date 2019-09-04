@@ -12,7 +12,6 @@
         width: 50%;
         height: 25%;
     }
-
 }
 .reviews__background{
     width: 100%;
@@ -95,4 +94,12 @@
         background-color: gray;
         text-decoration: none;
         text-transform: uppercase;
+        &::after{
+            content: "Подробнее";
+        }
+        @include phones{
+            &::after{
+                content: "Читать отзыв";
+            }
+        }
 }

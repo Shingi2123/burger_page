@@ -839,6 +839,11 @@ button {
   background-color: gray;
   text-decoration: none;
   text-transform: uppercase; }
+  .review__button__link::after {
+    content: "Подробнее"; }
+  @media screen and (max-width: 480px) {
+    .review__button__link::after {
+      content: "Читать отзыв"; } }
 
 .fixed-menu {
   position: fixed;
@@ -1116,6 +1121,7 @@ button {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 4.714rem 0 4.285rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
