@@ -5,6 +5,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    @include tablets{
+        background-image: url('./img/bg-best-tablets.png');
+    }
+    @include phones{
+        background-image: url('./img/bg-best-phones.png');
+    }
 }
 .best__desc h5{
     font-size: 1.714rem;
@@ -44,7 +50,7 @@
     }
 }
 .best__picture{
-    width: 90%;
+    // width: 90%;
     margin-bottom: 2.428rem;
     @include phones{
         margin-bottom: 0;
