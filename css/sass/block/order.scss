@@ -1,5 +1,4 @@
 .order{
-    min-height: 100vh;
     background-image: url('./img/bg-order.png');
     background-position: center top;
     background-size: cover;
@@ -7,7 +6,6 @@
     padding: 4.714rem 0 4.285rem;
     display: flex;
     align-items: center;
-    min-height: 100%;
 }
 .order{
     .title{

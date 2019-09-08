@@ -342,22 +342,23 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px; } }
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px; } }
+
 html, body {
-  font-size: 14px;
   height: 100%;
-  background-color: white;
   color: #fff;
-  line-height: 1.42;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  @media screen and (max-width: 768px) {
-    html, body {
-      font-size: 13px; } }
-  @media screen and (max-width: 480px) {
-    html, body {
-      font-size: 12px; } }
 
 body {
+  font-size: 14px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
   position: relative; }
 
 .wrapper {
@@ -367,6 +368,7 @@ body {
   overflow: hidden; }
 
 .container {
+  position: relative;
   width: 95%;
   max-width: 67.14rem;
   margin: 0 auto;
@@ -381,9 +383,6 @@ body {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
-
-.face > .container {
-  position: relative; }
 
 ul {
   margin: 0;
@@ -409,18 +408,13 @@ button {
   cursor: pointer; }
 
 .section {
+  height: 100vh;
+  min-height: 46.428rem;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 100vh;
-  min-height: 46.428rem; }
+  overflow: hidden; }
   .section--non-centered {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -444,9 +438,6 @@ button {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
-
-.face__container {
-  height: 100%; }
 
 .face__content {
   display: -webkit-box;
@@ -664,8 +655,7 @@ button {
   background-image: url("./img/bg-best.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%; }
+  background-size: cover; }
   @media screen and (max-width: 768px) {
     .best {
       background-image: url("./img/bg-best-tablets.png"); } }
@@ -686,8 +676,7 @@ button {
 .best__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 11.071rem; }
+  display: flex; }
   @media screen and (max-width: 480px) {
     .best__list {
       -webkit-box-orient: vertical;
@@ -699,7 +688,8 @@ button {
 .best__item {
   width: calc(100%/3);
   padding: 0 1.071rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 3.571rem; }
   @media screen and (max-width: 480px) {
     .best__item {
       display: -webkit-box;
@@ -1121,7 +1111,6 @@ button {
   background-size: cover; }
 
 .order {
-  min-height: 100vh;
   background-image: url("./img/bg-order.png");
   background-position: center top;
   background-size: cover;
@@ -1132,8 +1121,7 @@ button {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  min-height: 100%; }
+  align-items: center; }
 
 .order .title {
   margin-bottom: 0.611em; }

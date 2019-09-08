@@ -1,11 +1,9 @@
 .section{
-    // height: 100%;
-    // height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 100vh;
     min-height: 46.428rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
     &--non-centered{
         display: flex;
         justify-content: flex-start;

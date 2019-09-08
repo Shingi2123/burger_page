@@ -4,7 +4,6 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     @include tablets{
         background-image: url('./img/bg-best-tablets.png');
     }
@@ -27,7 +26,7 @@
 }
 .best__list{
     display: flex;
-    margin-bottom: 11.071rem;
+    // margin-bottom: 11.071rem;
     @include phones{
         flex-direction: column;
         margin-bottom: 0;
@@ -42,6 +41,7 @@
     // &:last-child{
     //     margin-right: 0;
     // }
+    margin-bottom: 3.571rem;
     @include phones{
         display: flex;
         flex-direction: row;
